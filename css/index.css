@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 /* Center the loader */
 #loader {
   position: absolute;
@@ -18,13 +21,21 @@
 }
 
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Add animation to "page content" */
@@ -33,20 +44,178 @@
   -webkit-animation-name: animatebottom;
   -webkit-animation-duration: 1s;
   animation-name: animatebottom;
-  animation-duration: 1s
+  animation-duration: 1s;
 }
 
 @-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
 }
 
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
 }
 
 #myDiv {
   display: none;
+  /* text-align: center; */
+}
+.reDiv {
+  float: right;
+  position: relative;
+  background-color: #6ac466;
+  width: 50.33%;
+  height: 100vh;
+  /* border-top-left-radius: 2%;
+  border-bottom-left-radius: 50%; */
+  border-radius: 10px 0px 10px 525px;
+  margin-top: -55px;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 0px 2px gray;
+}
+.reDiv img {
+  margin-top: 150px;
+}
+.reDiv p {
+  margin-top: 30px;
+  margin-left: 22%;
+  position: absolute;
+  font-size: 30px;
+  color: white;
+}
+.reDiv p span {
+  color: black;
+}
+
+section p:first-child {
+  position: absluote;
+  color: #6ac466;
+  margin-left: 5%;
+  margin-top: 3%;
+  font-size: 25px;
+  font-weight: bold;
+}
+section p:first-child span {
+  color: rgb(245, 241, 241);
+  border: 1px solid;
+  border-radius: 50%;
+  font-size: 35px;
+  padding: 5px;
+  background-color: #6ac466;
+}
+section span {
+  color: #6ac466;
+  font-size: 65px;
+  font-weight: bold;
+  margin-left: 13%;
+  margin-top: 3%;
+}
+section h3 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-left: 13%;
+  margin-top: 1%;
+}
+section article {
+  /* color: red; */
+  width: 28%;
+  font-size: 22px;
+  margin-left: 13%;
+  margin-top: 3%;
+}
+section button {
+  font-size: 16px;
+  background-color: #1f1716;
+  color: #fff;
+  padding: 10px 0px;
+  width: 100%;
+  max-width: 190px;
   text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-left: 13%;
+  margin-top: 3%;
+  /* border-radius: ; */
+}
+/**/
+main section div:first-child{
+    background: #fff;
+    width: 120px;
+    height: 120px;
+    border-radius: 77px;
+    border: #41c365 solid 4px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 20% 20% 10px 25%;
+    flex-wrap: wrap;
+    transition: ease-in all 0.5s;
+}
+main section div:first-child img{
+    padding: 5px;
+    max-width: 100%;
+    height: auto;
+}
+main section div:first-child:hover{
+    background-color: black;
+}
+/**/
+main section div:nth-child(2){
+    background: #fff;
+    width: 120px;
+    height: 120px;
+    border-radius: 77px;
+    border: #41c365 solid 4px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: -7.9% 0% 15px 45%;
+    /* margin-left: 50%; */
+    flex-wrap: wrap;
+    transition: ease-in all 0.5s;
+    visibility: visible;
+}
+main section div:nth-child(2) img{
+    padding: 5px;
+    max-width: 100%;
+    height: auto;
+}
+main section div:nth-child(2):hover{
+    background-color: black;
+}
+/**/
+main section div:last-child{
+    background: #fff;
+    width: 120px;
+    height: 120px;
+    border-radius: 77px;
+    border: #41c365 solid 4px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: -8.5% 0% 15px 65%;
+    flex-wrap: wrap;
+    transition: ease-in all 0.5s;
+    visibility: visible;
+}
+main section div:last-child img{
+    padding: 5px;
+    max-width: 100%;
+    height: auto;
+}
+main section div:last-child:hover{
+    background-color: black;
 }
