@@ -1,16 +1,11 @@
-// let load = document.getElementById('loading');
-// // eslint-disable-next-line no-unused-vars
-// function loadFunction() {
-//   load.style.display = 'none';
-// }
+'use strict';
 
-// eslint-disable-next-line no-var
-var myVar;
+let loaders;
 
 // eslint-disable-next-line no-unused-vars
 function myFunction() {
   // eslint-disable-next-line no-unused-vars
-  myVar = setTimeout(showPage, 3000);
+  loaders = setTimeout(showPage, 3000);
 }
 
 function showPage() {
