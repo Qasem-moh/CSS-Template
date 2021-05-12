@@ -431,6 +431,7 @@ footer section span {
   /* position: absolute; */
   margin-top: 6px;
   padding: 10px;
+  background-color: gray;
 }
 .listDiv div span {
   position: absolute;
