@@ -138,7 +138,7 @@ section article {
   font-size: 22px;
   margin-left: 13%;
   margin-top: 3%;
-  max-height:150px ;
+  max-height: 150px;
 }
 section button {
   font-size: 16px;
@@ -347,14 +347,14 @@ article p:nth-child(3) {
   margin-top: 80px;
   position: absolute;
 }
-.lastdiv article p:first-child{
+.lastdiv article p:first-child {
   position: absolute;
   color: black;
   width: 60%;
   margin-top: 180px;
   margin-left: 10%;
 }
-.lastdiv article p:last-child{
+.lastdiv article p:last-child {
   position: absolute;
   color: black;
   width: 60%;
@@ -362,4 +362,45 @@ article p:nth-child(3) {
   margin-left: 25%;
   font-weight: bold;
   font-size: 25px;
+}
+.threeDiv {
+  text-align: center;
+  background: #3fbc61;
+  border-radius: 20px;
+  padding: 20px;
+  width: 20%;
+  display: inline-block;
+  margin-top: 20%;
+  /* margin-left: 20%; */
+}
+.threeDiv span {
+  background: #ddd;
+  width: 50px;
+  height: 50px;
+  color: #3fbc61;
+  display: inline-block;
+  border-radius: 30px;
+}
+.threeDiv p {
+  width: 100%;
+  font: optional;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+}
+.threeSpans{
+  margin-left: 48%;
+  margin-top: 50px;
+}
+.threeSpans span {
+  background: #3fbc61;
+  width: 20px;
+  height: 20px;
+  color: #3fbc61;
+  display: inline-block;
+  border-radius: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+.threeSpans span:active{
+  background-color: black
 }
