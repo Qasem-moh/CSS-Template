@@ -34,6 +34,19 @@ function showPage() {
 // // eslint-disable-next-line new-cap
 // DrawText();
 
-document.getElementById('threeSpans').addEventListener('click', function () {
-  document.getElementsByTagName('span').setAttribute('id','clicked');
-});
+// eslint-disable-next-line no-unused-vars
+let show = document.getElementsByClassName('showMore');
+let i ;
+// eslint-disable-next-line no-empty
+for (i= 0; i < show.length; i++) {
+  show[i].addEventListener('click', function () {
+    this.classList.toggle('active');
+    let content=this.nextElementSibling;
+    if (content.style.display==='block'){
+      content.style.display='none';
+    }else{
+      content.style.display='block';
+      show.innerHTML='-';
+    }
+  });
+}
