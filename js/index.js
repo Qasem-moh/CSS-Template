@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 let loaders;
 
@@ -9,8 +9,8 @@ function myFunction() {
 }
 
 function showPage() {
-  document.getElementById('loader').style.display = 'none';
-  document.getElementById('myDiv').style.display = 'block';
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
 }
 /*** */
 
@@ -35,18 +35,21 @@ function showPage() {
 // DrawText();
 
 // eslint-disable-next-line no-unused-vars
-let show = document.getElementsByClassName('showMore');
-let i ;
+let show = document.getElementsByClassName("showMore");
+
 // eslint-disable-next-line no-empty
-for (i= 0; i < show.length; i++) {
-  show[i].addEventListener('click', function () {
-    this.classList.toggle('active');
-    let content=this.nextElementSibling;
-    if (content.style.display==='block'){
-      content.style.display='none';
-    }else{
-      content.style.display='block';
-      show.innerHTML='-';
+for (let i = 0; i < show.length; i++) {
+  show[i].addEventListener("click", function () {
+    show[i].innerHTML === "+"
+      ? (show[i].innerHTML = "-")
+      : (show[i].innerHTML = "+");
+    this.classList.toggle("active");
+    let content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+      show.innerHTML = "-";
     }
   });
 }

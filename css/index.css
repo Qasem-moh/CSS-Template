@@ -424,6 +424,10 @@ footer section span {
   width: 700px;
   margin-top: 20px;
 }
+
+/* .active:after {
+  content: "\2212";
+} */
 .listDiv div p {
   color: black;
   line-height: -22px;
@@ -512,7 +516,7 @@ form button:last-child {
   line-height: 22px;
   text-align: center;
 }
-.adImg{
+.adImg {
   margin-top: 100px;
   margin-left: 27.33%;
 }
