@@ -14,8 +14,6 @@ function showPage() {
 }
 /*** */
 
-
-
 // // eslint-disable-next-line no-unused-vars
 // let charText=0;
 // // eslint-disable-next-line no-unused-vars
@@ -35,3 +33,7 @@ function showPage() {
 // }
 // // eslint-disable-next-line new-cap
 // DrawText();
+
+document.getElementById('threeSpans').addEventListener('click', function () {
+  document.getElementsByTagName('span').setAttribute('id','clicked');
+});
